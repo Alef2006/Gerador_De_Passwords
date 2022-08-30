@@ -12,6 +12,7 @@ body{
     width:110vw;
     height: 100vh;
     overflow: hidden;
+    background-color:blue;
 }
 .banner{
     width:100vw;
