@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+@font-face {
+        font-family: 'matrix';
+        src: url('fontes/matrix.ttf') format('truetype');
+        font-weight: normal;
+}
+
+body{
+    width:110vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.banner{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner video{
+    position: fixed;
+    top:0;
+    left:0;
+    object-fit: cover;
+    width: 100%;
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    z-index: 1;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 22px;
+    padding: 20px;
+}
+.content h1{
+    font-family: 'matrix';
+    font-size: 50px ;
+    font-weight: 700px;
+    color:white;
+    text-align: center;
+   
+}
+p{
+    margin: 10px 0 20px;
+    text-align: center;
+}
+.content input [type= 'checkbox']{
+  margin-right:0;
+  font-family: 'sans-serif';
+}
+.result-container{
+    background-color: black;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    height: 7vh;
+    width: 22vw;
+    letter-spacing: 1px;
+    margin-bottom:10px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+}
+
+.result-container #result{
+    word-wrap:break-word;
+    max-width:calc(100% - 40px);
+    
+}
+.result-container .btn{
+    font-size: 20px;
+    top: 5px;
+    right: 5px;
+    height: 5px;
+    width: 3vw;
+    height: 6vh;
+}
+.btn{
+    position: absolute;
+    display: flex;
+    border: none;
+    color:white;
+    cursor: pointer;
+    font-size: 20px;
+    background-color:rgb(25, 25, 26);
+   justify-content: center;
+   align-items: center;
+   margin: 0px 0px 15px 0px ;
+}
+
+.btn-large{
+    display: block;
+    height: 7vh;
+    width: 22vw;
+    background-color: black;
+    font-family: 'matrix';
+    margin-right :40px; 
+    border: none;
+    color:white;
+    cursor: pointer;
+    font-size: 20px;
+   justify-content: center;
+   align-items: center;
+   margin-right: 40px;
+    margin-left: 40px;
+}
+.setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em 4em;
+    margin-bottom: 1.5em;
+    margin-top: 3px;
+}
+.setting label{
+    font-family: 'matrix';
+}
+@media screen and (max-width:400px) {
+    .result-container{
+        font-size: 14px;
+    }
+}
