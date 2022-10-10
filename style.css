@@ -37,9 +37,10 @@ body{
     width: 400px;
     z-index: 1;
     color: white;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(19px);
     border-radius: 22px;
     padding: 20px;
+    background-color: brown;
 }
 .content h1{
     font-family: 'matrix';
