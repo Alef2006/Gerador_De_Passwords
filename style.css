@@ -7,12 +7,11 @@
         src: url('fontes/matrix.ttf') format('truetype');
         font-weight: normal;
 }
-
 body{
     width:110vw;
     height: 100vh;
     overflow: hidden;
-    background-color:blue;
+    background-color:rgb(0, 0, 0);
 }
 .banner{
     width:100vw;
@@ -40,7 +39,6 @@ body{
     backdrop-filter: blur(19px);
     border-radius: 22px;
     padding: 20px;
-    background-color: brown;
 }
 .content h1{
     font-family: 'matrix';
@@ -59,9 +57,11 @@ p{
   font-family: 'sans-serif';
 }
 .result-container{
+    color: rgb(16, 173, 10);
     background-color: black;
     display: flex;
-    justify-content:flex-start;
+    column-gap: 10px;
+    justify-content:center;
     align-items: center;
     position: relative;
     font-size: 18px;
@@ -73,11 +73,12 @@ p{
     margin-left: 40px;
 
 }
-
-.result-container #result{
+.result-container span{
+    /*
     word-wrap:break-word;
     max-width:calc(100% - 40px);
-    
+    */
+    border-right: 10px;
 }
 .result-container .btn{
     font-size: 20px;
@@ -99,7 +100,6 @@ p{
    align-items: center;
    margin: 0px 0px 15px 0px ;
 }
-
 .btn-large{
     display: block;
     height: 7vh;
@@ -132,3 +132,4 @@ p{
         font-size: 14px;
     }
 }
+
